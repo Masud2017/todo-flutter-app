@@ -7,6 +7,7 @@ class AddTodoActivity extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        shadowColor: Colors.grey,
         title: Text("Add todo"),
       ),
       body: AddTodoPageContent(),
@@ -22,7 +23,10 @@ class AddTodoPageContent extends StatefulWidget {
 class _AddTodoStateMutator extends State<AddTodoPageContent> {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    throw UnimplementedError();
+    return Container(
+      child: Center(
+        child: Text("Hello world this is my add todo activity"),
+      ),
+    );
   }
 }
